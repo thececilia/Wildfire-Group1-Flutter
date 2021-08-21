@@ -31,4 +31,8 @@ class Auth {
       throw Failure(message: e.toString());
     }
   }
+
+  Future<void> signOut() async{
+    auth.signOut();
+  }
 }
