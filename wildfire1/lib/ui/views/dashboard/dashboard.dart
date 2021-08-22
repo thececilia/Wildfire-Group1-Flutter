@@ -1084,7 +1084,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                                                                                     await auth.signUp(email: emailController.text, password: passwordController.text).then((onSuccess) {
                                                                                                       CollectionReference UserUpdate = FirebaseFirestore.instance.collection("UserUpdate");
                                                                                                       UserUpdate.add({
-                                                                                                        "id": DocumentReference,
                                                                                                         "firstName": firstNameController.text,
                                                                                                         "lastName": lastNameController.text,
                                                                                                         "phoneNumber": phoneNumberController.text,

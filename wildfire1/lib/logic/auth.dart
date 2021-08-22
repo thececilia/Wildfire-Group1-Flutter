@@ -35,4 +35,9 @@ class Auth {
   Future<void> signOut() async{
     auth.signOut();
   }
+
+  Stream<User?> checkforUser() {
+    return auth.authStateChanges();
+  }
+
 }
